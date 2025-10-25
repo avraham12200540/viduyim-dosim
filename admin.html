@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>מנהל - וידויים של דוסים</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>וידויים של דוסים — דף מנהל</h1>
+      <p class="muted">הזדהה עם סיסמת מנהל כדי לצפות ולהנהיג וידויים (עבודה מקומית פשוטה - שנה את הסיסמה בקובץ script.js).</p>
+    </header>
+
+    <section id="authSection" class="card">
+      <label for="adminPassword">הכנס סיסמת מנהל:</label>
+      <input id="adminPassword" type="password" placeholder="סיסמה"/>
+      <div class="actions">
+        <button id="adminLogin">התחבר</button>
+      </div>
+    </section>
+
+    <section id="adminPanel" style="display:none;">
+      <h2>כל הווידויים (חדשים למעלה)</h2>
+      <div id="adminList"></div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

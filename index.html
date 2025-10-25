@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>וידויים של דוסים</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>וידויים של דוסים</h1>
+      <p class="muted">שלח וידוי — המנהל יאשר לפני פרסום. אין לפרסם תכנים מיניים או מידע מזהה על קטינים.</p>
+    </header>
+
+    <section class="form-section">
+      <form id="confessionForm" class="card">
+        <label for="confessionText">כתוב כאן את הוידוי שלך:</label>
+        <textarea id="confessionText" placeholder="כתוב כאן את הוידוי..." required></textarea>
+        <div class="actions">
+          <button type="submit">שלח וידוי</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>שלושת הווידויים המאושרים האחרונים</h2>
+      <div id="latestConfessions"></div>
+    </section>
+
+    <footer>
+      <p class="muted">קישור קבוע לקבוצת ה־WhatsApp של הפרויקט נמצא בתוך הווידוי (אם המנהל הוסיף אותו).</p>
+    </footer>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
